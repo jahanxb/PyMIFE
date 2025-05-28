@@ -3,7 +3,14 @@ from __future__ import annotations
 import secrets
 
 from mife.data.group import GroupBase, GroupElem
-from typing import Self, TypedDict
+#from typing import Self, TypedDict
+
+import typing_extensions
+from typing import Tuple, Any, List, Callable, TypedDict
+from typing_extensions import Self
+
+
+
 from gmpy2 import powmod, gcd, invert, mpz
 from Crypto.Util.number import isPrime
 

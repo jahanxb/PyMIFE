@@ -265,13 +265,14 @@ class FeDDHMultiClient:
         Generate a FeDDHMultiClient decryption key
 
         :param y: Function vector
-        :param key: FeDDHMultiClient master key
+        :param key: FeDDHMultiClient master key # it means s_i
         :return: FeDDHMultiClient decryption key
         """
         if len(y) != key.n:
             raise Exception(f"Function vector must be a {key.n} x {key.m} matrix")
         cul_1 = 0
         cul_2 = 0
+        # we have sk_i =(s_i, T_i), This function "keygen" takes s_i and y[i] and generates T_i matrix as follows 
         for i in range(key.n):
             if len(y[i]) != key.m:
                 raise Exception(f"Function vector must be a {key.n} x {key.m} matrix")

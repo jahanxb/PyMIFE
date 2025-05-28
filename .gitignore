@@ -1,3 +1,12 @@
 /dist
 .DS_Store
 /venv
+venv/
+.ipynb_checkpoints/
+STGCN_IJCAI-18/
+data/
+pems08/
+PeMSD7_V_1026.csv
+PeMSD7_V_228.csv
+PeMSD7_W_1026.csv
+PeMSD7_W_228.csv
