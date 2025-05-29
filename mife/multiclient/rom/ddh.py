@@ -209,8 +209,8 @@ class FeDDHMultiClient:
         c = []
 
         for i in range(len(x)):
-            s1, s2 = key.enc_key[i]
-            c.append((u1 * s1 + u2 * s2 + x[i]) * key.g)
+            s1, s2 = key.enc_key[i] 
+            c.append((u1 * s1 + u2 * s2 + x[i]) * key.g) # generating element in the group, using generator
 
         return _FeDDHMultiClient_C(tag, c)
 
