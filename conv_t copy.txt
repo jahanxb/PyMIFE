@@ -1,0 +1,25 @@
+Epoch 1: Train MSE=0.0386  Val MSE=0.0047
+Epoch 2: Train MSE=0.0070  Val MSE=0.0039
+Epoch 3: Train MSE=0.0059  Val MSE=0.0145
+Epoch 4: Train MSE=0.0054  Val MSE=0.0487
+Epoch 5: Train MSE=0.0051  Val MSE=0.0036
+Epoch 6: Train MSE=0.0046  Val MSE=0.0294
+Epoch 7: Train MSE=0.0046  Val MSE=0.0070
+Epoch 8: Train MSE=0.0044  Val MSE=0.0069
+Epoch 9: Train MSE=0.0043  Val MSE=0.0165
+Epoch 10: Train MSE=0.0041  Val MSE=0.0399
+Epoch 11: Train MSE=0.0040  Val MSE=0.0376
+Epoch 12: Train MSE=0.0040  Val MSE=0.0183
+Epoch 13: Train MSE=0.0040  Val MSE=0.0699
+Epoch 14: Train MSE=0.0037  Val MSE=0.0735
+Epoch 15: Train MSE=0.0037  Val MSE=0.0303
+Early stopping.
+
+=== Final Test Metrics ===
+MAE       : 0.0462
+RMSE      : 0.0599
+MAPE      : 343726489600000.00%
+SMAPE     : 21.10%
+R2        : 0.9484
+Explained Variance: 0.9486
+Directional Accuracy: 55.23%
