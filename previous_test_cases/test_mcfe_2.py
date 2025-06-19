@@ -42,10 +42,10 @@ x2 = [2, 3, 4, 5, 6]    # Client 2's local gradient/features
 x3 = [3, 4, 5, 6, 7]    # Client 3's local gradient/features
 
 # Aggregator has ONE query vector (model weights/function)
-y_aggregator = [10, 20, 30, 40, 50]  # Same for all clients
-
+#y_aggregator = [10, 20, 30, 40, 50]  # Same for all clients
+y_aggregator = [44, 45, 46 ,47, 48]
 # Multi-client format
-x = [x1, x2, x3]
+x = [x1, x1, x3]
 y = [y_aggregator, y_aggregator, y_aggregator]  # Replicated for each client
 
 print("=== Federated Learning with MCFE ===")
@@ -64,7 +64,7 @@ cs = [FeDDHMultiClient.encrypt(x[i], tag, key.get_enc_key(i)) for i in range(n)]
 sk = FeDDHMultiClient.keygen(y, key)
 
 # Secure aggregation: sum of all client contributions
-result = FeDDHMultiClient.decrypt(cs, tag, key.get_public_key(), sk, (0, 5000))
+result = FeDDHMultiClient.decrypt(cs, tag, key.get_public_key(), sk, (0, 9999999))
 
 print(f"\nMCFE Aggregated Result: {result}")
 
